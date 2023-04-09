@@ -1,4 +1,4 @@
-package com.example.universitymanagmentsysytem.config;
+package com.example.usermanagmentsystem.config;
 
 import lombok.SneakyThrows;
 
@@ -9,7 +9,7 @@ public abstract class DatabaseConfig {
     @SneakyThrows
     public Connection connect(){
         Class.forName("org.postgresql.Driver");
-        String url="jdbc:postgresql://localhost:5432/umg_system";
+        String url="jdbc:postgresql://localhost:5432/user-managment-system";
         String username="postgres";
         String password="root";
         return DriverManager.getConnection(url,username,password);
